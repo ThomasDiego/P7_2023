@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <script src="./custom.js" defer></script>
+  <body>
+    <div class="container">
+      <div class="topLogo">
+        <img src="./images/logo.svg" alt="Les petits plats" />
+      </div>
+      <div class="searchBar">
+        <input
+          type="text"
+          class="searchBarInput"
+          name="searchBar"
+          id="searchBar"
+          placeholder="Rechercher une recette"
+        />
+      </div>
+      <div class="filtered">
+        <div class="filteredItem ingredient">
+          <div class="filteredName">Exemple</div>
+          <i class="delFiltered far fa-times-circle"></i>
+        </div>
+        <div class="filteredItem appareil">
+          <div class="filteredName">Exemple</div>
+          <i class="delFiltered far fa-times-circle"></i>
+        </div>
+        <div class="filteredItem ustensile">
+          <div class="filteredName">Exemple</div>
+          <i class="delFiltered far fa-times-circle"></i>
+        </div>
+      </div>
+      <div class="filters">
+        <div class="filterGroup">
+        <div class="bg-blue filterMenu" data-id="ingredient">Ingredients</div>
+        <div class="bg-blue filterContent" data-id="ingredient">
+          <input type="text" class="bg-blue filterInput" placeholder="Rechercher un ingrédient" name="" id="" />
+          <div class="filterList">
+            <div class="filterName">Pomme</div>
+            <div class="filterName">Orange</div>
+            <div class="filterName">Pomme</div>
+            <div class="filterName">Orange d'amour</div>
+            <div class="filterName">Pomme</div>
+            <div class="filterName">Orange</div>
+            <div class="filterName">Pomme</div>
+            <div class="filterName">Orange</div>
+            <div class="filterName">Pomme</div>
+            <div class="filterName">Orange</div>
+          </div>
+        </div>
+        </div>
+        <div class="filterGroup">
+          <div class="bg-green filterMenu" data-id="appareil">Appareils</div>
+          <div class="bg-green filterContent" data-id="appareil">
+            <input type="text" class="bg-green filterInput" placeholder="Rechercher un appareil" name="" id="" />
+            <div class="filterList">
+              <div class="filterName">Pomme</div>
+              <div class="filterName">Orange</div>
+              <div class="filterName">Pomme</div>
+              <div class="filterName">Orange d'amour</div>
+              <div class="filterName">Pomme</div>
+              <div class="filterName">Orange</div>
+              <div class="filterName">Pomme</div>
+              <div class="filterName">Orange</div>
+              <div class="filterName">Pomme</div>
+              <div class="filterName">Orange</div>
+            </div>
+          </div>
+        </div>
+        <div class="filterGroup">
+          <div class="bg-red filterMenu" data-id="ustensile">Ustensiles</div>
+          <div class="bg-red filterContent" data-id="ustensile">
+            <input type="text" class="bg-red filterInput" placeholder="Rechercher un ustensile" name="" id="" />
+            <div class="filterList">
+              <div class="filterName">Pomme</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardList">
+        <!-- 1 card -->
+        <div class="card">
+          <div class="cardTop"></div>
+          <div class="cardContent">
+            <div class="cardContentTop">
+              <div class="cardTitle">Limonade de Coco</div>
+              <div class="cardTime"><i class="far fa-clock"></i>10 min</div>
+            </div>
+            <div class="cardContentDown">
+              <div class="cardIngredients">blabla<br />blabla</div>
+              <div class="cardTuto">
+                Mettre les glaçons à votre goût dans le blender, ajouter le
+                lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                jusqu'à avoir la consistence désirée.Mettre les glaçons à votre goût dans le blender, ajouter le
+                lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                jusqu'à avoir la consistence désirée.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 card -->
+        <div class="card">
+          <div class="cardTop"></div>
+          <div class="cardContent">
+            <div class="cardContentTop">
+              <div class="cardTitle">Limonade de Coco</div>
+              <div class="cardTime"><i class="far fa-clock"></i>10 min</div>
+            </div>
+            <div class="cardContentDown">
+              <div class="cardIngredients">blabla<br />blabla</div>
+              <div class="cardTuto">
+                Mettre les glaçons à votre goût dans le blender, ajouter le
+                lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                jusqu'à avoir la consistence désirée.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 card -->
+        <div class="card">
+          <div class="cardTop"></div>
+          <div class="cardContent">
+            <div class="cardContentTop">
+              <div class="cardTitle">Limonade de Coco</div>
+              <div class="cardTime"><i class="far fa-clock"></i>10 min</div>
+            </div>
+            <div class="cardContentDown">
+              <div class="cardIngredients">blabla<br />blabla</div>
+              <div class="cardTuto">
+                Mettre les glaçons à votre goût dans le blender, ajouter le
+                lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                jusqu'à avoir la consistence désirée.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4 card -->
+        <div class="card">
+          <div class="cardTop"></div>
+          <div class="cardContent">
+            <div class="cardContentTop">
+              <div class="cardTitle">Limonade de Coco</div>
+              <div class="cardTime"><i class="far fa-clock"></i>10 min</div>
+            </div>
+            <div class="cardContentDown">
+              <div class="cardIngredients">blabla<br />blabla</div>
+              <div class="cardTuto">
+                Mettre les glaçons à votre goût dans le blender, ajouter le
+                lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                jusqu'à avoir la consistence désirée.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
