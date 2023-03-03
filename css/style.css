@@ -191,6 +191,7 @@ body {
   gap: 5px;
   width: 100px;
   align-self: self-start;
+  place-content: end;
 }
 .cardTime > i {
   align-self: center;
