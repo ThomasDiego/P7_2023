@@ -1,0 +1,214 @@
+:root {
+  --bleu: #3282f7;
+  --vert: #68d9a4;
+  --rouge: #ed6454;
+}
+body {
+  margin: 0;
+  font-family: "Lato";
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.topLogo {
+  display: flex;
+  justify-content: center;
+}
+.searchBarInput {
+  width: 1240px;
+  height: 69px;
+  border-radius: 5px;
+  background: #e7e7e7;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("../images/loupe.svg");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 20px);
+}
+.searchBarInput:focus {
+  outline: 1px solid #cacaca;
+}
+/* FILTERED */
+.filtered {
+  display: flex;
+  gap: 15px;
+}
+.filteredItem {
+  display: flex;
+  padding: 10px 15px;
+  border-radius: 5px;
+  gap: 10px;
+}
+.ustensile {
+  background-color: var(--rouge);
+  color: white;
+}
+.ingredient {
+  background-color: var(--bleu);
+  color: white;
+}
+.appareil {
+  background-color: var(--vert);
+  color: white;
+}
+.filteredItem > i {
+  align-self: center;
+}
+.delFiltered:hover {
+  cursor: pointer;
+}
+/* END FILTERED */
+/* FILTER */
+.bg-blue {
+  background-color: var(--bleu);
+}
+.bg-red {
+  background-color: var(--rouge);
+}
+.bg-green {
+  background-color: var(--vert);
+}
+.filters {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.filterMenu {
+  border-radius: 5px;
+  padding: 25px;
+  width: 170px;
+  color: white;
+  background-image: url("../images/chevron-down.svg");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 20px);
+}
+.filterMenu:hover {
+  cursor: pointer;
+}
+
+.filterContent {
+  width: fit-content;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+
+.filterList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.filterName {
+  width: fit-content;
+}
+.filterName:hover {
+  cursor: pointer;
+}
+
+.filterInput {
+  width: 100%;
+  padding: 25px;
+  border: none;
+  color: white;
+  background-image: url("../images/chevron-up.svg");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 20px);
+}
+
+.filterInput:focus {
+  outline: none;
+}
+
+.filterInput::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+/* END FILTER */
+/* CARD */
+.cardList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.card {
+  width: 380px;
+  height: 364px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.cardTop {
+  width: 100%;
+  height: 178px;
+  background-color: #c7bebe;
+}
+.cardContent {
+  padding: 20px;
+  background-color: #e7e7e7;
+  height: 186px;
+}
+.cardContentTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+}
+.cardContentDown {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+  gap: 10px;
+}
+.cardTitle {
+  font-weight: 400;
+  font-size: 18px;
+}
+.cardTime {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  gap: 5px;
+  width: 100px;
+  align-self: self-start;
+}
+.cardTime > i {
+  align-self: center;
+}
+.cardIngredients {
+  font-weight: 700;
+  font-size: 12px;
+  height: inherit;
+}
+.cardTuto {
+  font-weight: 700;
+  font-size: 12px;
+  height: inherit;
+  /* pour couper le text */
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* END CARD */
